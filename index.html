@@ -149,7 +149,8 @@ section.block{padding:84px 0 20px}
 .term{position:absolute;inset:18px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:14px 16px;font:500 12px/1.75 var(--mono)}
 .term .d{display:flex;gap:6px;margin-bottom:8px}.term .d i{width:9px;height:9px;border-radius:50%;background:#3A3F4C}
 .term .ok{color:#5BE39E}.term .dim{color:#8A90A0}.term .hl{color:color-mix(in srgb,var(--tone) 75%,#fff)}
-.flow{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:16px;flex-wrap:wrap}
+.flow{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:16px;flex-wrap:wrap;align-content:center}
+.flow i{display:inline-flex;align-items:center;gap:7px;font-style:normal}
 .flow span{padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);font:500 11.5px var(--mono);white-space:nowrap}
 .flow em{font-style:normal;color:color-mix(in srgb,var(--tone) 80%,#fff)}
 .glyph{position:absolute;inset:0;display:grid;place-items:center}
@@ -211,7 +212,7 @@ dialog.lb::backdrop{background:rgba(6,7,10,.82);backdrop-filter:blur(4px)}
     <ul>
       <li><a href="#dashboards">Dashboards</a></li>
       <li><a href="#excel">Excel</a></li>
-      <li><a href="#automation">Automation</a></li>
+      <li><a href="#automation">Market intel &amp; AI</a></li>
       <li><a href="#academic">Academic</a></li>
       <li><a href="#experience">Experience</a></li>
       <li class="keep"><a href="#contact">Contact</a></li>
@@ -248,7 +249,7 @@ dialog.lb::backdrop{background:rgba(6,7,10,.82);backdrop-filter:blur(4px)}
     </div>
     <div class="wrap stats">
       <div class="stat reveal"><b>7</b><span>Power BI dashboards, each with its own design</span></div>
-      <div class="stat reveal"><b>16</b><span>public projects across BI, Excel, Python and AI</span></div>
+      <div class="stat reveal"><b>20</b><span>public projects across BI, Excel, market intelligence and AI</span></div>
       <div class="stat reveal"><b>0</b><span>mismatches: Excel results re-checked against Python</span></div>
       <div class="stat reveal gold"><b>Gold</b><span>medal at iReX 2024 for my final-year project</span></div>
     </div>
@@ -398,10 +399,55 @@ dialog.lb::backdrop{background:rgba(6,7,10,.82);backdrop-filter:blur(4px)}
   <section class="block" id="automation">
     <div class="wrap">
       <div class="head">
-        <div><div class="kicker">03 - Python &amp; AI automation</div><h2>Pipelines that run themselves</h2></div>
-        <p>Research, reporting and security workflows automated end to end, with checks at every step.</p>
+        <div><div class="kicker">03 - Market intelligence &amp; AI automation</div><h2>Research I ran, pipelines I built</h2></div>
+        <p>How I researched markets, mapped networks and kept AI output honest: the methods, the checks and the numbers.</p>
       </div>
       <div class="grid two">
+        <article class="card reveal" id="research-engine" style="--tone:#31BED6">
+          <div class="art"><div class="flow"><span>Long list</span><i><em>→</em><span>AI research batches</span></i><i><em>→</em><span>Evidence + confidence</span></i><i><em>→</em><span>Re-check</span></i><i><em>→</em><span>Dashboard</span></i></div></div>
+          <div class="body">
+            <h3>Market Intelligence Research Engine</h3>
+            <p>The research method behind my partner dashboards: 3,500+ firms in five markets profiled on the same fields, every answer with an evidence link and a confidence level.</p>
+            <ul class="nums"><li><b>5</b>markets</li><li><b>935</b>unsupported values blanked</li></ul>
+            <ul class="tags"><li>AI research agents</li><li>Python</li><li>Data validation</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Market-Intelligence-Research-Engine">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="warm-intro" style="--tone:#3B82F6">
+          <div class="art"><div class="flow"><span>Decision makers</span><i><em>→</em><span>Mutual connections</span></i><i><em>→</em><span>Clean + match</span></i><i><em>→</em><span>Best bridge</span></i></div></div>
+          <div class="body">
+            <h3>Warm Introduction Mapper</h3>
+            <p>Which target decision makers can the sales team reach through someone they know? Mutual connections read with a browser extension I built, then cleaned and ranked.</p>
+            <ul class="nums"><li><b>776</b>warm paths (Dallas)</li><li><b>91 / 125</b>FinTech firms reachable</li></ul>
+            <ul class="tags"><li>Chrome extension</li><li>JavaScript</li><li>Python</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Warm-Introduction-Mapper">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="outreach-qa" style="--tone:#E0662B">
+          <div class="art"><div class="term"><div class="d"><i></i><i></i><i></i></div>
+            <div><span class="dim">$</span> python outreach_check.py <span class="hl">batch.json</span></div>
+            <div class="dim">✗ phrase in 4 emails (max 3)</div>
+            <div class="dim">✗ statistic needs a source: "60%"</div>
+            <div>rewrite → <span class="hl">run again</span></div>
+            <div class="ok">✓ 0 failures · export written</div></div></div>
+          <div class="body">
+            <h3>AI Outreach Quality Checker</h3>
+            <p>Rule checks on AI-written sales emails: repetition, unsupported claims and data mismatches caught before anything could be sent.</p>
+            <ul class="nums"><li><b>292 → 0</b>repeated phrases</li><li><b>25%</b>contacts cut by fact-check</li></ul>
+            <ul class="tags"><li>Python</li><li>LLM QA</li><li>Regex</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/AI-Outreach-Quality-Checker">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="ransomware" style="--tone:#E3464B">
+          <div class="art"><div class="flow"><span>2 trackers</span><i><em>→</em><span>Tier A · C · X</span></i><i><em>→</em><span>Threat-intel check</span></i><i><em>→</em><span>PDPA + licence gates</span></i></div></div>
+          <div class="body">
+            <h3>Ransomware Claim Triage</h3>
+            <p>Public leak-site claims about Malaysian organisations turned into an evidence-tiered list. A claim is not a breach, so every row says how strong its evidence is.</p>
+            <ul class="nums"><li><b>144</b>claims reviewed</li><li><b>47</b>ransomware groups</li></ul>
+            <ul class="tags"><li>Threat intelligence</li><li>Python</li><li>Data protection</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Ransomware-Claim-Triage">View project <span>→</span></a>
+          </div>
+        </article>
         <article class="card reveal" id="ai-agent" style="--tone:#8C86FF">
           <div class="art"><div class="term"><div class="d"><i></i><i></i><i></i></div>
             <div><span class="dim">$</span> assess --target <span class="hl">&lt;authorised scope&gt;</span></div>
@@ -562,11 +608,11 @@ dialog.lb::backdrop{background:rgba(6,7,10,.82);backdrop-filter:blur(4px)}
       <div class="head"><div><div class="kicker">06 - Toolbox</div><h2>Skills</h2></div></div>
       <div class="panel reveal">
         <h4>Data analytics</h4>
-        <ul class="chips"><li>Power BI</li><li>Power Query (M)</li><li>DAX</li><li>Excel</li><li>Data cleaning</li><li>Data validation</li><li>Scoring models</li></ul>
+        <ul class="chips"><li>Power BI</li><li>Power Query (M)</li><li>DAX</li><li>Excel</li><li>Data cleaning</li><li>Data validation</li><li>Scoring models</li><li>Market research</li></ul>
         <h4>Programming &amp; databases</h4>
         <ul class="chips"><li>Python</li><li>SQL</li><li>SQLite</li><li>HTML / CSS / JavaScript</li><li>VS Code</li></ul>
         <h4>AI &amp; automation</h4>
-        <ul class="chips"><li>Prompt engineering</li><li>AI pipelines</li><li>MCP</li><li>n8n</li><li>Hugging Face</li><li>Claude Code</li></ul>
+        <ul class="chips"><li>Prompt engineering</li><li>AI pipelines</li><li>AI research agents</li><li>LLM output QA</li><li>Chrome extensions</li><li>MCP</li><li>n8n</li><li>Hugging Face</li><li>Claude Code</li></ul>
         <h4>Data platforms &amp; CRM</h4>
         <ul class="chips"><li>Crunchbase</li><li>Apollo</li><li>Lusha</li><li>Microsoft Dynamics 365</li></ul>
         <h4>Languages</h4>
