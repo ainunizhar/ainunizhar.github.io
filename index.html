@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ainun Izhar — Data &amp; BI Analyst</title>
+<meta name="description" content="Portfolio of Ainun Izhar, Data & BI Analyst in Malaysia: Power BI dashboards, Excel data-validation workbooks, Python and AI automation projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ainunizhar.github.io/">
+<meta property="og:title" content="Ainun Izhar — Data & BI Analyst">
+<meta property="og:description" content="Power BI dashboards, Excel data validation, Python and AI automation.">
+<meta property="og:image" content="https://ainunizhar.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4338CA">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ainun Izhar","jobTitle":"Data & BI Analyst","address":{"@type":"PostalAddress","addressRegion":"Selangor","addressCountry":"MY"},"alumniOf":"Management and Science University","sameAs":["https://www.linkedin.com/in/ainunizhar","https://github.com/ainunizhar"]}</script>
+<style>
+:root{
+  --bg:#F6F5F1;--bg-2:#EEECE5;--surface:#FFFFFF;--ink:#15171C;--ink-2:#474C57;--ink-3:#7A7F8A;--line:#E2DFD6;
+  --accent:#4338CA;--accent-ink:#FFFFFF;--accent-soft:#E8E6FB;--gold:#A87A1E;--gold-soft:#F7EDD6;--ok:#1F9D63;
+  --shadow:0 1px 2px rgba(20,22,30,.05),0 10px 30px -12px rgba(20,22,30,.18);
+  --shadow-lg:0 2px 6px rgba(20,22,30,.06),0 30px 60px -24px rgba(20,22,30,.35);
+  --radius:20px;--display:"Space Grotesk",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B0D12;--bg-2:#10131A;--surface:#151821;--ink:#EEF0F5;--ink-2:#B3B8C5;--ink-3:#7D8393;--line:#242935;
+  --accent:#8C86FF;--accent-ink:#0B0D12;--accent-soft:#1D1C38;--gold:#E3B652;--gold-soft:#2A2315;--ok:#3CCB86;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 30px -14px rgba(0,0,0,.7);--shadow-lg:0 30px 60px -24px rgba(0,0,0,.85);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B0D12;--bg-2:#10131A;--surface:#151821;--ink:#EEF0F5;--ink-2:#B3B8C5;--ink-3:#7D8393;--line:#242935;
+  --accent:#8C86FF;--accent-ink:#0B0D12;--accent-soft:#1D1C38;--gold:#E3B652;--gold-soft:#2A2315;--ok:#3CCB86;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 30px -14px rgba(0,0,0,.7);--shadow-lg:0 30px 60px -24px rgba(0,0,0,.85);
+  color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(900px 520px at 85% -120px,color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%),
+             radial-gradient(700px 420px at -10% 30%,color-mix(in srgb,#E0662B 9%,transparent),transparent 70%)}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;margin:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
+  background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 17px var(--display)}
+.brand i{width:30px;height:30px;border-radius:9px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font:700 13px var(--display);font-style:normal}
+.nav ul{display:flex;gap:4px;margin:0 0 0 auto;padding:0;list-style:none}
+.nav ul a{display:block;padding:8px 12px;border-radius:10px;text-decoration:none;font-size:14px;color:var(--ink-2)}
+.nav ul a:hover{background:var(--bg-2);color:var(--ink)}
+.icon-btn{width:38px;height:38px;border-radius:11px;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer}
+.icon-btn svg{width:18px;height:18px}
+@media (max-width:820px){.nav ul li:not(.keep){display:none}}
+
+/* hero */
+.hero{padding:72px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:8px;padding:6px 12px 6px 10px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:13px;color:var(--ink-2)}
+.status b{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 22%,transparent)}
+.hero h1{font-size:clamp(44px,6.4vw,82px);line-height:.98;margin:22px 0 10px;font-weight:700}
+.hero h1 span{display:block;color:var(--accent)}
+.hero .role{font:500 clamp(17px,2vw,20px)/1.4 var(--display);color:var(--ink-2);margin:0 0 18px}
+.hero p.lead{font-size:17px;color:var(--ink-2);max-width:560px;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 20px;border-radius:13px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn svg{width:18px;height:18px}
+.stack{position:relative;aspect-ratio:16/13}
+.stack img{position:absolute;width:78%;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid color-mix(in srgb,var(--line) 60%,transparent);transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.stack img:nth-child(1){top:0;right:0;transform:rotate(5deg)}
+.stack img:nth-child(2){top:24%;left:4%;transform:rotate(-4deg)}
+.stack img:nth-child(3){bottom:0;right:6%;transform:rotate(1.5deg)}
+.stack:hover img:nth-child(1){transform:rotate(7deg) translate(14px,-10px)}
+.stack:hover img:nth-child(2){transform:rotate(-6deg) translate(-14px,0)}
+.stack:hover img:nth-child(3){transform:rotate(0deg) translate(6px,12px)}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:40px}.stack{max-width:560px;width:100%;margin-inline:auto}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.stat b{display:block;font:700 30px/1.1 var(--display);letter-spacing:-.02em}
+.stat span{font-size:13.5px;color:var(--ink-3)}
+.stat.gold b{color:var(--gold)}
+@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* sections */
+section.block{padding:84px 0 20px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px;flex-wrap:wrap}
+.head h2{font-size:clamp(30px,3.6vw,44px);font-weight:700;margin-top:10px}
+.head p{max-width:520px;margin:0;color:var(--ink-2)}
+.note{font-size:13px;color:var(--ink-3)}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.grid,.grid.two{grid-template-columns:1fr}}
+.card{--tone:var(--accent);position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--tone);z-index:2}
+.card.feature{grid-column:1/-1;flex-direction:row}
+.card.feature .media{flex:0 0 64%;aspect-ratio:16/9}
+.card.feature .body{padding:30px 30px 28px;justify-content:center}
+.card.feature .body h3{font-size:27px}
+@media (max-width:980px){.card.feature{flex-direction:column}.card.feature .media{flex:none;width:100%}}
+.card.info.full{grid-column:1/-1}
+.card.info.full ul{grid-template-columns:repeat(4,1fr);gap:22px}
+@media (max-width:980px){.card.info.full ul{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.card.info.full ul{grid-template-columns:1fr}}
+.media{position:relative;display:block;width:100%;padding:0;border:0;margin:0;cursor:zoom-in;background:#0B0D12;aspect-ratio:16/9;overflow:hidden}
+.media img{width:100%;height:100%;object-fit:cover;object-position:top}
+.media .badge{position:absolute;left:14px;bottom:14px;display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:99px;background:rgba(11,13,18,.72);color:#fff;font:500 12px var(--mono);letter-spacing:.06em;backdrop-filter:blur(6px);transition:opacity .25s}
+.media .badge::before{content:"";width:0;height:0;border-left:8px solid currentColor;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.media.playing .badge{opacity:0}
+.media.loading::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:linear-gradient(90deg,transparent,var(--tone),transparent);background-size:50% 100%;animation:load 1s linear infinite}
+@keyframes load{from{background-position:-50% 0}to{background-position:150% 0}}
+.body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.body h3{font-size:21px;line-height:1.2}
+.body p{margin:0;color:var(--ink-2);font-size:15px}
+.nums{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0;padding:0;list-style:none;font-size:13.5px;color:var(--ink-3)}
+.nums b{font:700 17px var(--display);color:var(--ink);margin-right:3px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.tags li{font:500 11.5px/1 var(--mono);padding:6px 9px;border-radius:8px;background:color-mix(in srgb,var(--tone) 12%,var(--surface));color:color-mix(in srgb,var(--tone) 70%,var(--ink));border:1px solid color-mix(in srgb,var(--tone) 22%,transparent)}
+.more{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14.5px;text-decoration:none;color:var(--ink)}
+.more span{transition:transform .2s}
+.more:hover span{transform:translateX(4px)}
+.links{margin-top:auto;display:flex;gap:18px;flex-wrap:wrap}
+.info{padding:26px;background:linear-gradient(160deg,var(--accent-soft),var(--surface) 70%)}
+.info h3{font-size:22px;margin:8px 0 14px}
+.info ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}
+.info li{display:flex;gap:10px;font-size:14.5px;color:var(--ink-2)}
+.info li::before{content:"";flex:none;width:7px;height:7px;margin-top:8px;border-radius:2px;background:var(--accent);transform:rotate(45deg)}
+.shot{aspect-ratio:16/9;overflow:hidden;background:var(--bg-2);border-bottom:1px solid var(--line)}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top left}
+
+/* illustrated tiles (projects without screenshots) */
+.art{aspect-ratio:16/9;position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--tone) 30%,transparent),transparent 60%),#0E1117;color:#E8EAF0}
+.term{position:absolute;inset:18px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:14px 16px;font:500 12px/1.75 var(--mono)}
+.term .d{display:flex;gap:6px;margin-bottom:8px}.term .d i{width:9px;height:9px;border-radius:50%;background:#3A3F4C}
+.term .ok{color:#5BE39E}.term .dim{color:#8A90A0}.term .hl{color:color-mix(in srgb,var(--tone) 75%,#fff)}
+.flow{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:16px;flex-wrap:wrap}
+.flow span{padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);font:500 11.5px var(--mono);white-space:nowrap}
+.flow em{font-style:normal;color:color-mix(in srgb,var(--tone) 80%,#fff)}
+.glyph{position:absolute;inset:0;display:grid;place-items:center}
+.glyph svg{width:42%;max-width:220px;opacity:.95}
+
+/* academic */
+.medal{position:absolute;top:16px;right:16px;z-index:3;display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:99px;background:linear-gradient(135deg,#F6D77B,#C99227);color:#3B2A06;font:700 12px var(--mono);letter-spacing:.06em;box-shadow:0 8px 20px -8px rgba(201,146,39,.8)}
+
+/* experience */
+.timeline{display:grid;gap:18px}
+.job{display:grid;grid-template-columns:220px 1fr;gap:28px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow)}
+.job .when{font:500 13px var(--mono);color:var(--ink-3)}
+.job .where{margin-top:10px;font-size:14px;color:var(--ink-2)}
+.job h3{font-size:21px}
+.job .title{color:var(--accent);font-weight:600;margin:4px 0 12px}
+.job ul{margin:0;padding-left:18px;color:var(--ink-2);display:grid;gap:6px}
+@media (max-width:760px){.job{grid-template-columns:1fr;gap:6px}}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:900px){.cols{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow)}
+.panel h3{font-size:18px;margin-bottom:14px}
+.list{margin:0;padding:0;list-style:none;display:grid;gap:13px}
+.list li{font-size:14.5px;color:var(--ink-2)}
+.list b{display:block;color:var(--ink);font-weight:600}
+.list .gold b{color:var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:0;list-style:none}
+.chips li{font-size:13px;padding:6px 11px;border-radius:9px;background:var(--bg-2);border:1px solid var(--line)}
+.panel h4{margin:0 0 9px;font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+
+/* contact */
+.contact{margin:96px 0 40px;padding:56px 48px;border-radius:28px;background:linear-gradient(135deg,#1E1A6B,#4338CA 55%,#6D5BF0);color:#fff;position:relative;overflow:hidden}
+.contact::after{content:"";position:absolute;width:420px;height:420px;right:-120px;top:-160px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.22),transparent 65%)}
+.contact h2{font-size:clamp(30px,4vw,48px);max-width:640px}
+.contact p{max-width:560px;color:rgba(255,255,255,.82);margin:14px 0 26px}
+.contact .btn{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff}
+.contact .btn.primary{background:#fff;color:#1E1A6B;border-color:#fff}
+@media (max-width:640px){.contact{padding:38px 24px}}
+footer{padding:26px 0 44px;color:var(--ink-3);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}
+
+/* lightbox */
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1500px,96vw);width:100%}
+dialog.lb::backdrop{background:rgba(6,7,10,.82);backdrop-filter:blur(4px)}
+.lb figure{margin:0;border-radius:16px;overflow:hidden;background:#0B0D12;box-shadow:0 40px 80px rgba(0,0,0,.6)}
+.lb img{width:100%;max-height:82vh;object-fit:contain;background:#0B0D12}
+.lb figcaption{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 18px;color:#E8EAF0;font-size:14.5px}
+.lb figcaption a{color:#B9B5FF;font-weight:600;text-decoration:none}
+.lb .x{position:absolute;top:-46px;right:0;width:38px;height:38px;border-radius:11px;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:22px;cursor:pointer}
+
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><i>AI</i>Ainun Izhar</a>
+    <ul>
+      <li><a href="#dashboards">Dashboards</a></li>
+      <li><a href="#excel">Excel</a></li>
+      <li><a href="#automation">Automation</a></li>
+      <li><a href="#academic">Academic</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li class="keep"><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="icon-btn" id="theme" aria-label="Switch light / dark theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3a6.5 6.5 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="status"><b></b>Open to BI / Data Analyst roles</span>
+        <h1>Ainun Izhar<span>Data &amp; BI Analyst</span></h1>
+        <p class="role">Power BI · Power Query · DAX · Excel · Python · AI automation</p>
+        <p class="lead">I turn messy market research into clean, scored data and dashboards people actually use. For a year I
+          researched cybersecurity markets across the US, EMEA, Malaysia and Singapore with AI pipelines I built myself;
+          before that I built Power BI dashboards at PETRONAS Digital. Computer Forensic graduate, Selangor, Malaysia.</p>
+        <div class="cta">
+          <a class="btn primary" href="#dashboards">See the dashboards</a>
+          <a class="btn" href="https://www.linkedin.com/in/ainunizhar" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+          <a class="btn" href="https://github.com/ainunizhar" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.02c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg>GitHub</a>
+        </div>
+      </div>
+      <div class="stack" aria-hidden="true">
+        <img src="assets/posters/singapore.webp" alt="" width="1280" height="720">
+        <img src="assets/posters/events.webp" alt="" width="1280" height="720">
+        <img src="assets/posters/texas.webp" alt="" width="1280" height="720">
+      </div>
+    </div>
+    <div class="wrap stats">
+      <div class="stat reveal"><b>7</b><span>Power BI dashboards, each with its own design</span></div>
+      <div class="stat reveal"><b>16</b><span>public projects across BI, Excel, Python and AI</span></div>
+      <div class="stat reveal"><b>0</b><span>mismatches: Excel results re-checked against Python</span></div>
+      <div class="stat reveal gold"><b>Gold</b><span>medal at iReX 2024 for my final-year project</span></div>
+    </div>
+  </section>
+
+  <section class="block" id="dashboards">
+    <div class="wrap">
+      <div class="head">
+        <div><div class="kicker">01 — Power BI</div><h2>Dashboards</h2></div>
+        <p>One-page dashboards rebuilt in Power BI from my market-intelligence research. Hover a card to play its
+          walkthrough, click to watch it full size. <span class="note">Research data stays private; models and reports are on GitHub.</span></p>
+      </div>
+      <div class="grid">
+        <article class="card feature reveal" id="texas" style="--tone:#E26B1D">
+          <button class="media" data-gif="https://raw.githubusercontent.com/ainunizhar/Texas-Cybersecurity-Partner-Landscape/main/images/dashboard.gif" data-title="Texas Cybersecurity Partner Landscape" data-href="https://github.com/ainunizhar/Texas-Cybersecurity-Partner-Landscape" aria-label="Play the walkthrough of Texas Cybersecurity Partner Landscape">
+            <img src="assets/posters/texas.webp" alt="Texas Cybersecurity Partner Landscape Power BI dashboard" loading="lazy" width="1280" height="720"><span class="badge">WALKTHROUGH</span></button>
+          <div class="body">
+            <h3>Texas Cybersecurity Partner Landscape</h3>
+            <p>582 cybersecurity service firms in Dallas–Fort Worth, Houston and Austin, scored as channel partners, with service coverage, vendor ecosystem and a drill-down to every firm.</p>
+            <ul class="nums"><li><b>582</b>firms</li><li><b>161</b>priority partners</li><li><b>1,282</b>confirmed vendor ties</li><li><b>167</b>telcos</li></ul>
+            <ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query</li><li>Star schema</li><li>Drill-down</li><li>Tooltip pages</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Texas-Cybersecurity-Partner-Landscape">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="emea" style="--tone:#31BED6">
+          <button class="media" data-gif="https://raw.githubusercontent.com/ainunizhar/EMEA-Channel-Partner-Prioritisation/main/images/dashboard.gif" data-title="EMEA Channel Partner Prioritisation" data-href="https://github.com/ainunizhar/EMEA-Channel-Partner-Prioritisation" aria-label="Play the walkthrough of EMEA Channel Partner Prioritisation">
+            <img src="assets/posters/emea.webp" alt="EMEA Channel Partner Prioritisation Power BI dashboard" loading="lazy" width="1280" height="720"><span class="badge">WALKTHROUGH</span></button>
+          <div class="body">
+            <h3>EMEA Channel Partner Prioritisation</h3>
+            <p>2,572 partners in 75 countries ranked by a transparent 0–10 activation score, on a map built from data alone.</p>
+            <ul class="nums"><li><b>2,572</b>partners</li><li><b>75</b>countries</li><li><b>4,945</b>vendor ties</li></ul>
+            <ul class="tags"><li>Power BI</li><li>Scoring model</li><li>Scatter map</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/EMEA-Channel-Partner-Prioritisation">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="malaysia" style="--tone:#00AD85">
+          <button class="media" data-gif="https://raw.githubusercontent.com/ainunizhar/Malaysia-Cybersecurity-Channel-Map/main/images/dashboard.gif" data-title="Malaysia Cybersecurity Channel Map" data-href="https://github.com/ainunizhar/Malaysia-Cybersecurity-Channel-Map" aria-label="Play the walkthrough of Malaysia Cybersecurity Channel Map">
+            <img src="assets/posters/malaysia.webp" alt="Malaysia Cybersecurity Channel Map Power BI dashboard" loading="lazy" width="1280" height="720"><span class="badge">WALKTHROUGH</span></button>
+          <div class="body">
+            <h3>Malaysia Cybersecurity Channel Map</h3>
+            <p>193 firms broken down in any order with a decomposition tree, and a 9-service fingerprint drawn per firm.</p>
+            <ul class="nums"><li><b>193</b>firms</li><li><b>9</b>services</li><li><b>37</b>SIEM confirmed</li></ul>
+            <ul class="tags"><li>Decomposition tree</li><li>SVG in DAX</li><li>Treemap</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Malaysia-Cybersecurity-Channel-Map">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="singapore" style="--tone:#E3464B">
+          <button class="media" data-gif="https://raw.githubusercontent.com/ainunizhar/Singapore-Cybersecurity-Partner-Scorecard/main/images/dashboard.gif" data-title="Singapore Cybersecurity Partner Scorecard" data-href="https://github.com/ainunizhar/Singapore-Cybersecurity-Partner-Scorecard" aria-label="Play the walkthrough of Singapore Cybersecurity Partner Scorecard">
+            <img src="assets/posters/singapore.webp" alt="Singapore Cybersecurity Partner Scorecard Power BI dashboard" loading="lazy" width="1280" height="720"><span class="badge">WALKTHROUGH</span></button>
+          <div class="body">
+            <h3>Singapore Cybersecurity Partner Scorecard</h3>
+            <p>152 partners scored 1–5, with credential badges (CSA, CREST, MAS) and a verification trail of every check.</p>
+            <ul class="nums"><li><b>152</b>partners</li><li><b>50</b>priority</li><li><b>613</b>logged checks</li></ul>
+            <ul class="tags"><li>Bubble chart</li><li>SVG badges</li><li>Light theme</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Singapore-Cybersecurity-Partner-Scorecard">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="events" style="--tone:#5B3CC4">
+          <button class="media" data-gif="https://raw.githubusercontent.com/ainunizhar/Cybersecurity-Events-Radar/main/images/dashboard.gif" data-title="Cybersecurity Events Radar" data-href="https://github.com/ainunizhar/Cybersecurity-Events-Radar" aria-label="Play the walkthrough of Cybersecurity Events Radar">
+            <img src="assets/posters/events.webp" alt="Cybersecurity Events Radar Power BI dashboard" loading="lazy" width="1280" height="720"><span class="badge">WALKTHROUGH</span></button>
+          <div class="body">
+            <h3>Cybersecurity Events Radar</h3>
+            <p>451 public events in 48 countries: a day-by-day heatmap that lists each day's events, and a live countdown agenda.</p>
+            <ul class="nums"><li><b>451</b>events</li><li><b>48</b>countries</li><li><b>319</b>exact dates</li></ul>
+            <ul class="tags"><li>Power BI</li><li>Date table</li><li>Public data</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Cybersecurity-Events-Radar">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="bursa" style="--tone:#1FBF7A">
+          <button class="media" data-gif="https://raw.githubusercontent.com/ainunizhar/Bursa-Malaysia-Listed-Universe/main/images/dashboard.gif" data-title="Bursa Malaysia Listed Universe" data-href="https://github.com/ainunizhar/Bursa-Malaysia-Listed-Universe" aria-label="Play the walkthrough of Bursa Malaysia Listed Universe">
+            <img src="assets/posters/bursa.webp" alt="Bursa Malaysia Listed Universe Power BI dashboard" loading="lazy" width="1280" height="720"><span class="badge">WALKTHROUGH</span></button>
+          <div class="body">
+            <h3>Bursa Malaysia Listed Universe</h3>
+            <p>Every entity listed on Bursa Malaysia by market, sector and Shariah status, on a trading-terminal ticker board.</p>
+            <ul class="nums"><li><b>1,136</b>listings</li><li><b>15</b>sectors</li><li><b>162</b>excluded securities</li></ul>
+            <ul class="tags"><li>Treemap</li><li>Open data</li><li>KEEPFILTERS</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Bursa-Malaysia-Listed-Universe">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" id="sme" style="--tone:#D7263D">
+          <button class="media" data-gif="https://raw.githubusercontent.com/ainunizhar/SME-Startup-Prospect-Explorer/main/images/dashboard.gif" data-title="SME &amp; Startup Prospect Explorer" data-href="https://github.com/ainunizhar/SME-Startup-Prospect-Explorer" aria-label="Play the walkthrough of SME and Startup Prospect Explorer">
+            <img src="assets/posters/sme.webp" alt="SME and Startup Prospect Explorer Power BI dashboard" loading="lazy" width="1280" height="1073"><span class="badge">WALKTHROUGH</span></button>
+          <div class="body">
+            <h3>SME &amp; Startup Prospect Explorer</h3>
+            <p>Five prospect explorers built from company-database exports: funding ladder, sector × size heatmap and founding waves.</p>
+            <ul class="nums"><li><b>5</b>markets</li><li><b>154,568</b>EMEA SMEs</li><li><b>13,048</b>FinTechs</li></ul>
+            <ul class="tags"><li>Funnel</li><li>Heatmap</li><li>Data pipeline</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/SME-Startup-Prospect-Explorer">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card info full reveal">
+          <div class="kicker">How they're built</div>
+          <h3>Designed like products, built like code</h3>
+          <ul>
+            <li>Power BI Projects (TMDL model + PBIR report) generated from Python, so every change is reviewable</li>
+            <li>Star schemas and unpivots in Power Query; DAX KPIs with live subtitles that follow the filters</li>
+            <li>Drill-down, decomposition tree, cross-filtering and report-page tooltip cards</li>
+            <li>Its own palette and background artboard per dashboard, colours checked for colour-blind safety</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="excel">
+    <div class="wrap">
+      <div class="head">
+        <div><div class="kicker">02 — Excel &amp; data validation</div><h2>Workbooks that check themselves</h2></div>
+        <p>Every result is a live formula (LET, FILTER, SORTBY, COUNTIFS), recalculated in Excel and compared with an
+          independent Python version of the same rules.</p>
+      </div>
+      <div class="grid">
+        <article class="card reveal" style="--tone:#5B3CC4">
+          <div class="shot"><img src="assets/shots/events-excel.webp" alt="Excel calendar heatmap of cybersecurity events" loading="lazy" width="1280" height="460"></div>
+          <div class="body">
+            <h3>Events Calendar Workbook</h3>
+            <p>A 12-month × 31-day heatmap with drop-downs and a one-formula agenda for 451 events.</p>
+            <ul class="nums"><li><b>372</b>calendar cells checked</li><li><b>0</b>mismatches</li></ul>
+            <ul class="tags"><li>COUNTIFS</li><li>Dynamic arrays</li><li>LET</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Cybersecurity-Events-Radar">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" style="--tone:#31BED6">
+          <div class="shot"><img src="assets/shots/two-pass.webp" alt="Excel reconciliation dashboard" loading="lazy" width="1280" height="1674"></div>
+          <div class="body">
+            <h3>Two-Pass Research Reconciliation</h3>
+            <p>Reconciles repeated research on ~200 EMEA partners: strict vs loose passes, tier checks, version compare.</p>
+            <ul class="nums"><li><b>~200</b>partners</li><li><b>0</b>mismatches vs Python</li></ul>
+            <ul class="tags"><li>Data validation</li><li>Reconciliation</li><li>Excel Tables</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Two-Pass-Research-Reconciliation">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" style="--tone:#E3464B">
+          <div class="shot"><img src="assets/shots/screening.webp" alt="Excel screening audit checks" loading="lazy" width="1280" height="472"></div>
+          <div class="body">
+            <h3>Cybersecurity Provider Screening Audit</h3>
+            <p>336 companies, one decision each with a written reason and code, re-checked by 9 live coverage checks.</p>
+            <ul class="nums"><li><b>153</b>keep</li><li><b>154</b>remove</li><li><b>29</b>review</li></ul>
+            <ul class="tags"><li>Audit trail</li><li>Reason codes</li><li>Assertions</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Cybersecurity-Provider-Screening-Audit">View project <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="automation">
+    <div class="wrap">
+      <div class="head">
+        <div><div class="kicker">03 — Python &amp; AI automation</div><h2>Pipelines that run themselves</h2></div>
+        <p>Research, reporting and security workflows automated end to end, with checks at every step.</p>
+      </div>
+      <div class="grid two">
+        <article class="card reveal" style="--tone:#8C86FF">
+          <div class="art"><div class="term"><div class="d"><i></i><i></i><i></i></div>
+            <div><span class="dim">$</span> assess --target <span class="hl">&lt;authorised scope&gt;</span></div>
+            <div class="dim">✓ authorisation confirmed · audit log on</div>
+            <div>agents → <span class="hl">11 security tools</span> · local LLM</div>
+            <div>parsers → de-duplicated findings · <span class="hl">CVSS</span></div>
+            <div class="ok">✓ report written</div></div></div>
+          <div class="body">
+            <h3>AI Vulnerability Assessment Agent</h3>
+            <p>AI agents run standard security tools on an authorised target; findings are scored with CVSS and written up automatically. Version 2 runs fully on local hardware. Pilot presented to CyberSecurity Malaysia.</p>
+            <ul class="tags"><li>Multi-agent</li><li>Ollama</li><li>Python</li><li>Docker</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/AI-Vulnerability-Assessment-Agent">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" style="--tone:#E0662B">
+          <div class="art"><div class="flow"><span>Collect</span><em>→</em><span>Prepare</span><em>→</em><span>Write (LLM)</span><em>→</em><span>Publish</span><em>→</em><span>Verify</span></div></div>
+          <div class="body">
+            <h3>Competitive Intelligence Digest Pipeline</h3>
+            <p>A weekly, unattended digest on 14 competitors: posts and news collected, de-duplicated, summarised by an LLM and published to OneNote append-only.</p>
+            <ul class="nums"><li><b>~480</b>pages published</li><li><b>43</b>weekly digests</li></ul>
+            <ul class="tags"><li>Microsoft Graph</li><li>Apify</li><li>SerpAPI</li><li>LLM</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Competitive-Intelligence-Digest-Pipeline">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" style="--tone:#0E9F8A">
+          <div class="shot"><img src="assets/shots/asean.webp" alt="ASEAN cybersecurity market outlook title slide" loading="lazy" width="1280" height="720"></div>
+          <div class="body">
+            <h3>ASEAN Cybersecurity Market Outlook 2026–2028</h3>
+            <p>A 16-slide outlook for six ASEAN countries, generated from data by a Python script; every figure traces to a named source.</p>
+            <ul class="tags"><li>python-pptx</li><li>Market research</li><li>Source ledger</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/ASEAN-Cybersecurity-Market-Outlook">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" style="--tone:#4338CA">
+          <div class="shot"><img src="assets/shots/portal.webp" alt="Partner portal prototype dashboard" loading="lazy" width="1280" height="800"></div>
+          <div class="body">
+            <h3>Partner Enablement Portal Demo</h3>
+            <p>A clickable partner-portal prototype: deal registration, sales material, commissions and three-step approvals (fictional sample data).</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>UX</li></ul>
+            <div class="links"><a class="more" href="https://ainunizhar.github.io/Partner-Enablement-Portal-Demo/">Live demo <span>→</span></a>
+              <a class="more" href="https://github.com/ainunizhar/Partner-Enablement-Portal-Demo">Code <span>→</span></a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="academic">
+    <div class="wrap">
+      <div class="head">
+        <div><div class="kicker">04 — Academic</div><h2>Bachelor projects</h2></div>
+        <p>From my Computer Forensic degree at Management and Science University (MSU).</p>
+      </div>
+      <div class="grid">
+        <article class="card reveal" style="--tone:#C99227">
+          <span class="medal">★ GOLD MEDAL · iReX 2024</span>
+          <div class="art"><div class="glyph"><svg viewBox="0 0 200 120" fill="none" stroke="#F3D27A" stroke-width="3">
+            <rect x="10" y="10" width="180" height="100" rx="12" stroke="rgba(255,255,255,.25)"/>
+            <circle cx="100" cy="55" r="26"/><path d="M88 52q4-5 8 0M104 52q4-5 8 0M90 66q10 8 20 0"/>
+            <path d="M58 30h-14v14M142 30h14v14M58 90h-14v-14M142 90h14v-14" stroke="#fff"/>
+            <path d="M40 100h120" stroke="rgba(255,255,255,.3)" stroke-dasharray="4 6"/></svg></div></div>
+          <div class="body">
+            <h3>MediaForensiX — Deepfake Video Detector</h3>
+            <p>My final-year project. Upload a video and a ResNeXt-50 + LSTM network classifies the face frames as real or fake, with a confidence score, frame heatmaps and the video's forensic metadata.</p>
+            <ul class="tags"><li>PyTorch</li><li>Computer vision</li><li>Django</li><li>Digital forensics</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/AI-System-Deepfake-Detector">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" style="--tone:#9B6BF2">
+          <div class="art"><div class="glyph"><svg viewBox="0 0 200 120" fill="none" stroke="#C9B6FF" stroke-width="3">
+            <rect x="30" y="20" width="96" height="44" rx="14"/><path d="M50 64l-8 14 20-14"/>
+            <rect x="80" y="56" width="90" height="40" rx="14" stroke="#fff"/><path d="M150 96l8 12-18-12" stroke="#fff"/>
+            <path d="M48 42h60M98 76h52" stroke-linecap="round"/></svg></div></div>
+          <div class="body">
+            <h3>PlutoAI Chatbot</h3>
+            <p>A GPT chatbot with chat history and a clean Streamlit interface.</p>
+            <ul class="tags"><li>OpenAI API</li><li>Streamlit</li><li>Python</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/OpenAI-Powered-Chatbots">View project <span>→</span></a>
+          </div>
+        </article>
+        <article class="card reveal" style="--tone:#3DDC84">
+          <div class="art"><div class="glyph"><svg viewBox="0 0 200 120" fill="none" stroke="#8EF0B8" stroke-width="3">
+            <rect x="70" y="8" width="60" height="104" rx="12"/><path d="M84 36l5 5 9-9M84 60l5 5 9-9M84 84l5 5 9-9" stroke="#fff"/>
+            <path d="M104 37h14M104 61h14M104 85h14" stroke-linecap="round"/></svg></div></div>
+          <div class="body">
+            <h3>TaskMaster — Android To-Do App</h3>
+            <p>Sign-in, a private SQLite task list per user, priorities and swipe to edit or delete.</p>
+            <ul class="tags"><li>Android</li><li>Java</li><li>SQLite</li></ul>
+            <a class="more" href="https://github.com/ainunizhar/Android-App-To-Do-List">View project <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="head"><div><div class="kicker">05 — Experience</div><h2>Where I've worked</h2></div></div>
+      <div class="timeline">
+        <article class="job reveal">
+          <div><div class="when">Nov 2025 – Nov 2026</div><div class="where">TTDI, Kuala Lumpur</div></div>
+          <div>
+            <h3>Delta Spike Asia Sdn Bhd</h3>
+            <div class="title">Management Trainee — Data, AI Automation &amp; Market Intelligence</div>
+            <ul>
+              <li>Researched and segmented MSSP and SME markets across the US, EMEA, Malaysia and Singapore with AI research pipelines I built.</li>
+              <li>Built Python pipelines to clean, de-duplicate and score company data, with a source and confidence level for every record.</li>
+              <li>Built interactive web dashboards and automated recurring reports and research tasks for leadership and sales (n8n, LLMs, MCP).</li>
+              <li>Built an AI-driven vulnerability assessment platform with a local LLM and presented the pilot to CyberSecurity Malaysia.</li>
+              <li>Trained 4 interns over 6 months in applying AI tools to research, data and automation work.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job reveal">
+          <div><div class="when">Mar 2025 – Aug 2025</div><div class="where">KLCC, Kuala Lumpur</div></div>
+          <div>
+            <h3>PETRONAS Digital Sdn Bhd</h3>
+            <div class="title">Cyber Security Intern</div>
+            <ul>
+              <li>Developed Power BI dashboards tracking the Cyber Security Division's operational KPIs, security approvals, risks and compliance, plus a system assets register with BIA (CIA) ratings.</li>
+              <li>Maintained SOC SOPs, technical guides and incident-reporting templates.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="cols" style="margin-top:20px">
+        <div class="panel reveal">
+          <h3>Education</h3>
+          <ul class="list">
+            <li><b>Bachelor in Computer Forensic (Hons)</b>Management and Science University · 2023–2025 · CGPA 3.66</li>
+            <li><b>Diploma in Computer Forensic</b>Management and Science University · 2020–2023 · CGPA 3.72</li>
+          </ul>
+        </div>
+        <div class="panel reveal">
+          <h3>Awards</h3>
+          <ul class="list">
+            <li class="gold"><b>Gold Medal — 18th Idea Regeneration Expo (iReX), 2024</b>for MediaForensiX, my final-year project</li>
+            <li><b>Dean's List × 5</b>2021–2025, diploma and bachelor</li>
+            <li><b>Best Academic Award nominee</b>Diploma convocation, 2023</li>
+          </ul>
+        </div>
+        <div class="panel reveal">
+          <h3>Certifications</h3>
+          <ul class="list">
+            <li><b>CompTIA Security+</b>CompTIA · 2026</li>
+            <li><b>CyberOps Associate</b>Cisco Networking Academy · 2026</li>
+            <li><b>Power BI Workshop</b>PETRONAS Digital · 2025</li>
+            <li><b>AI and Cybersecurity Bootcamp</b>EARTech IT · 2025</li>
+            <li><b>Google Cybersecurity · Applied Cryptography</b>Coursera · 2024</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="wrap">
+      <div class="head"><div><div class="kicker">06 — Toolbox</div><h2>Skills</h2></div></div>
+      <div class="panel reveal">
+        <h4>Data analytics</h4>
+        <ul class="chips"><li>Power BI</li><li>Power Query (M)</li><li>DAX</li><li>Excel</li><li>Data cleaning</li><li>Data validation</li><li>Scoring models</li></ul>
+        <h4>Programming &amp; databases</h4>
+        <ul class="chips"><li>Python</li><li>SQL</li><li>SQLite</li><li>HTML / CSS / JavaScript</li><li>VS Code</li></ul>
+        <h4>AI &amp; automation</h4>
+        <ul class="chips"><li>Prompt engineering</li><li>AI pipelines</li><li>MCP</li><li>n8n</li><li>Hugging Face</li><li>Claude Code</li></ul>
+        <h4>Data platforms &amp; CRM</h4>
+        <ul class="chips"><li>Crunchbase</li><li>Apollo</li><li>Lusha</li><li>Microsoft Dynamics 365</li></ul>
+        <h4>Languages</h4>
+        <ul class="chips" style="margin-bottom:0"><li>Malay (native)</li><li>English</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="contact">
+    <div class="contact reveal">
+      <div class="kicker" style="color:rgba(255,255,255,.7)">Let's talk</div>
+      <h2>Looking for a BI or Data Analyst who also automates the boring parts?</h2>
+      <p>I'm open to BI / Data Analyst roles. The fastest way to reach me is LinkedIn.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/ainunizhar" target="_blank" rel="noopener">Message me on LinkedIn</a>
+        <a class="btn" href="https://github.com/ainunizhar" target="_blank" rel="noopener">All repositories</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Ainun Izhar · Selangor, Malaysia</span><span>Projects built with Claude Code as a coding assistant</span></div></footer>
+
+<dialog class="lb" id="lb" aria-label="Dashboard walkthrough">
+  <button class="x" aria-label="Close">×</button>
+  <figure><img alt=""><figcaption><span></span><a target="_blank" rel="noopener">View project →</a></figcaption></figure>
+</dialog>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  document.getElementById("theme").addEventListener("click", () => {
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+  });
+
+  const hover = matchMedia("(hover: hover)").matches;
+  const lb = document.getElementById("lb"), lbImg = lb.querySelector("img");
+  document.querySelectorAll(".media[data-gif]").forEach(m => {
+    const img = m.querySelector("img"), poster = img.getAttribute("src");
+    let timer;
+    if (hover) {
+      m.addEventListener("mouseenter", () => {
+        timer = setTimeout(() => {
+          m.classList.add("loading");
+          const g = new Image();
+          g.onload = () => { m.classList.remove("loading"); if (m.matches(":hover")) { img.src = g.src; m.classList.add("playing"); } };
+          g.src = m.dataset.gif;
+        }, 160);
+      });
+      m.addEventListener("mouseleave", () => { clearTimeout(timer); img.src = poster; m.classList.remove("playing", "loading"); });
+    }
+    m.addEventListener("click", () => {
+      lbImg.src = m.dataset.gif; lbImg.alt = m.dataset.title + " walkthrough";
+      lb.querySelector("figcaption span").textContent = m.dataset.title;
+      lb.querySelector("figcaption a").href = m.dataset.href;
+      lb.showModal();
+    });
+  });
+  lb.querySelector(".x").addEventListener("click", () => lb.close());
+  lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+  lb.addEventListener("close", () => { lbImg.removeAttribute("src"); });
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }),
+                                      { rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>
