@@ -183,6 +183,10 @@ section.block{padding:84px 0 20px}
 .chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:0;list-style:none}
 .chips li{font-size:13px;padding:6px 11px;border-radius:9px;background:var(--bg-2);border:1px solid var(--line)}
 .panel h4{margin:0 0 9px;font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 40px}
+.skills .chips{margin-bottom:14px}
+.skills .note{grid-column:1/-1;margin:2px 0 0}
+@media (max-width:760px){.skills{grid-template-columns:1fr}}
 
 /* contact */
 .contact{margin:96px 0 40px;padding:56px 48px;border-radius:28px;background:linear-gradient(135deg,#1E1A6B,#4338CA 55%,#6D5BF0);color:#fff;position:relative;overflow:hidden}
@@ -620,17 +624,16 @@ dialog.lb::backdrop{background:rgba(6,7,10,.82);backdrop-filter:blur(4px)}
   <section class="block" id="skills">
     <div class="wrap">
       <div class="head"><div><div class="kicker">06 - Toolbox</div><h2>Skills</h2></div></div>
-      <div class="panel reveal">
-        <h4>Data analytics</h4>
-        <ul class="chips"><li>Power BI</li><li>Power Query (M)</li><li>DAX</li><li>Excel</li><li>Data cleaning</li><li>Data validation</li><li>Scoring models</li><li>Market research</li></ul>
-        <h4>Programming &amp; databases</h4>
-        <ul class="chips"><li>Python</li><li>SQL</li><li>SQLite</li><li>HTML / CSS / JavaScript</li><li>VS Code</li></ul>
-        <h4>AI &amp; automation</h4>
-        <ul class="chips"><li>Prompt engineering</li><li>AI pipelines</li><li>AI research agents</li><li>LLM output QA</li><li>Chrome extensions</li><li>MCP</li><li>n8n</li><li>Hugging Face</li><li>Claude Code</li></ul>
-        <h4>Data platforms &amp; CRM</h4>
-        <ul class="chips"><li>Crunchbase</li><li>Apollo</li><li>Lusha</li><li>Microsoft Dynamics 365</li><li>SharePoint</li><li>Power Automate</li><li>Power Apps</li></ul>
-        <h4>Languages</h4>
-        <ul class="chips" style="margin-bottom:0"><li>Malay (native)</li><li>English</li></ul>
+      <div class="panel reveal skills">
+        <div><h4>Data analytics</h4>
+          <ul class="chips"><li>Power BI</li><li>DAX</li><li>Power Query</li><li>Excel</li><li>SQL</li><li>Data modelling</li></ul></div>
+        <div><h4>Python &amp; AI automation</h4>
+          <ul class="chips"><li>Python (pandas)</li><li>AI research agents</li><li>LLM output QA</li><li>REST APIs</li><li>n8n</li><li>Claude Code</li></ul></div>
+        <div><h4>Data quality &amp; research</h4>
+          <ul class="chips"><li>Data cleaning</li><li>Data validation</li><li>Market intelligence</li><li>Lead scoring</li></ul></div>
+        <div><h4>Cybersecurity &amp; governance</h4>
+          <ul class="chips"><li>Risk &amp; compliance</li><li>Threat intelligence</li><li>Data privacy (PDPA)</li></ul></div>
+        <p class="note">Languages: Malay (native) · English</p>
       </div>
     </div>
   </section>
