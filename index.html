@@ -86,12 +86,11 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;margin:0}
 .stack:hover img:nth-child(2){transform:rotate(-6deg) translate(-14px,0)}
 .stack:hover img:nth-child(3){transform:rotate(0deg) translate(6px,12px)}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:40px}.stack{max-width:560px;width:100%;margin-inline:auto}}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
-.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.stats{display:flex;gap:14px;margin-top:56px}
+.stat{max-width:380px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
 .stat b{display:block;font:700 30px/1.1 var(--display);letter-spacing:-.02em}
 .stat span{font-size:13.5px;color:var(--ink-3)}
 .stat.gold b{color:var(--gold)}
-@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
 
 /* sections */
 section.block{padding:84px 0 20px}
@@ -248,10 +247,7 @@ dialog.lb::backdrop{background:rgba(6,7,10,.82);backdrop-filter:blur(4px)}
       </div>
     </div>
     <div class="wrap stats">
-      <div class="stat reveal"><b>7</b><span>Power BI dashboards, each with its own design</span></div>
       <div class="stat reveal"><b>20</b><span>public projects across BI, Excel, market intelligence and AI</span></div>
-      <div class="stat reveal"><b>0</b><span>mismatches: Excel results re-checked against Python</span></div>
-      <div class="stat reveal gold"><b>Gold</b><span>medal at iReX 2024 for my final-year project</span></div>
     </div>
   </section>
 
